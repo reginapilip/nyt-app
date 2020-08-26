@@ -6,7 +6,7 @@ const numberOfStories = document.querySelector("#numOfStories")
 const refreshBtn = document.querySelector("#refresh_btn")
 
 const apiKey = '7PjU9GmG7xbVhGYhV2OK575FwMIeVvcG'
-let articleURL = `http://api.nytimes.com/svc/topstories/v2/home.json?api-key=${apiKey}`
+let articleURL = `https://api.nytimes.com/svc/topstories/v2/home.json?api-key=${apiKey}`
 
 // for dynamically building a section URL - not in use, keeping for reference
 // const sectionURL = `https://api.nytimes.com/svc/news/v3/content/section-list.json?api-key=${apiKey}`
