@@ -1,0 +1,251 @@
+/* nyt.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600;700;800&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'EB Garamond', serif;
+}
+
+/* unvisited link */
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+/* visited link */
+
+a:visited {
+    color: black;
+}
+
+/* mouse over link */
+
+a:hover {
+    color: rgb(82, 80, 80);
+    text-decoration: underline;
+}
+
+/* selected link */
+
+a:active {
+    color: rgb(82, 80, 80);
+    text-decoration: underline;
+    ;
+}
+
+.main-content {
+    min-height: 90vh;
+    width: 75%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-container {
+    margin-top: 0.5em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stories-container {
+    margin: 3em auto;
+}
+
+.options-container {
+    margin: 2em 0 1em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    /* margin: 0 0.25em; */
+    background: black;
+    padding: 0.75em 20px;
+    border: 1.75px solid black;
+}
+
+.news_sections {
+    line-height: 1.3;
+    width: 260px;
+    max-width: 260px;
+    border: 1px solid black;
+    padding: 0.75em;
+}
+
+.news_sections:hover {
+    background-color: #eee;
+}
+
+.fa {
+    color: white;
+}
+
+.footer-container {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: white;
+    background: black;
+    letter-spacing: 1.5px;
+    padding: 2em 0;
+}
+
+.footer-container p {
+    text-align: center;
+    margin-right: 1em;
+}
+
+.footer-container a {
+    color: rgb(160, 204, 250);
+}
+
+.footer-copy {
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.footer-credits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider {
+    margin-left: 1em;
+    font-weight: bold;
+}
+
+#article-container {
+    /* width: 100%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.feature-article-item {
+    width: 100%;
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+    background: white;
+    /* border-bottom: rgba(0, 0, 0, 0.432) 0.25px solid; */
+}
+
+.feature-article-item h1, .article-item h1 {
+    font-size: 1.4rem;
+    /* line-height: 1.1; */
+    margin-bottom: 0.25em;
+    margin-top: -30px;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.featured-title a {
+    font-size: 2rem;
+}
+
+.featured-abstract {
+    font-size: 1.2rem;
+}
+
+.article-item {
+    width: 300px;
+    max-width: 300px;
+    padding: 2em 0.5em;
+    display: flex;
+    flex-direction: column;
+    /* align-items: space-between;
+    justify-content: space-between; */
+}
+
+.featured-article-section {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    text-align: right;
+    font-size: 1.2rem;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 0.5em 0.75em;
+    position: relative;
+    width: 100%;
+    top: -50px;
+}
+
+.article-section {
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: right;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 0.5em 0.75em;
+    position: relative;
+    width: 100%;
+    top: -41.5px;
+}
+
+.articles__feature-img-container img, .articles__img-container img {
+    width: 100%;
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+}
+
+.articles__img-container img {
+    background-size: cover;
+    object-fit: cover;
+    background-position: center;
+}
+
+.article-info {
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 0.9rem;
+    color: rgb(49, 49, 49);
+    margin-bottom: 1em;
+}
+
+.article-content {
+    font-size: 1.1rem;
+}
+
+/* .btn-read {
+    width: 100%;
+    margin-top: 2em;
+    align-self: flex-end;
+}
+
+.btn-feature-read {
+    margin-top: 2em;
+}
+
+.btn-read a, .btn-feature-read a {
+    color: white;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+} */
+
+#numOfStories {
+    text-align: right;
+    font-size: 0.7rem;
+    color: rgb(73, 75, 77);
+}
+
+.addHeight {
+    height: 15px;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+    }
+}
