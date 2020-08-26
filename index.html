@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYT | Top Stories</title>
+    <link rel=" stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/nyt.css">
+    <script src="js/moment.js"></script>
+    <script defer src="js/nyt.js"></script>
+</head>
+
+<body>
+    <div class="main-content">
+        <header class="header-container">
+            <div class="header-logo">
+                <img src="img/nyt-logo.png" alt="New York Times logo" height="50">
+            </div>
+            <div class="options-container">
+                <select class="news_sections" id="news_sections">
+                    <option value="home">Home</option>
+                    <option value="arts">Arts</option>
+                    <option value="business">Business</option>
+                    <option value="dining">Dining</option>
+                    <option value="fashion">Fashion</option>
+                    <option value="health">Health Magazine</option>
+                    <option value="opinion">National Opinion</option>
+                    <option value="politics">Politics</option>
+                    <option value="realestate">Real Estate</option>
+                    <option value="science">Science</option>
+                    <option value="sports">Sports</option>
+                    <option value="technology">Technology</option>
+                    <option value="world">World</option>
+                </select>
+                <button id="refresh_btn" class="btn" title="Refresh Stories"><i class="fa fa-refresh"
+                        aria-hidden="true"></i></button>
+            </div>
+        </header>
+
+        <div id="numOfStories"></div>
+        <div id="article-container" class="stories-container"></div>
+    </div>
+
+    <footer class="footer-container">
+        <div class="footer-credits">
+            <p class="footer-copy">&copy; 2020 <span class="divider">|</span></p>
+            <p>Created by Regina Pilipchuk <span class="divider">|</span></p>
+            <p>Powered by <a href="https://developer.nytimes.com/">NY Times Developers API</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
